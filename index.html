@@ -9,18 +9,26 @@
     <script src="p5.play.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-
-    <script>
-      //Your web app's Firebase configuration
-      
-      // // Initialize Firebase
-      // firebase.initializeApp(firebaseConfig);
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    </script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAMQkdBUIllFCNKXB0GVxP-9E3K15LQ8-U",
+    authDomain: "multiplayercarracing-80784.firebaseapp.com",
+    databaseURL: "https://multiplayercarracing-80784.firebaseio.com",
+    projectId: "multiplayercarracing-80784",
+    storageBucket: "multiplayercarracing-80784.appspot.com",
+    messagingSenderId: "524549884763",
+    appId: "1:524549884763:web:71e32dd13dad7ba4b4e87e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
     <script src="js/Player.js"></script>
     <script src="js/Form.js"></script>
